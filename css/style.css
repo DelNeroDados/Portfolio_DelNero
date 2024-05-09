@@ -19,10 +19,15 @@
 
     /*TESTE FUNDO*/
     --bg-color: #000000;
-
-    --bg-img: url("https://pbs-prod.linustechtips.com/monthly_2017_09/59ceaf2627f9a_I.gifdthisafewdaysagoasarequesttoanotheruserthoughtIdshareitwithyouguys-Imgur.gif.2f15acacd394d7a17679adbb9a9644ee.gif");
-    /*--bg-img: url("/css/fundo01.gif");*/
     --second-bg-color: #ff00005a;
+    --bg-img: url("fundo01.gif");
+
+    /*
+    --bg-img: url("https://lh3.googleusercontent.com/d/1IQKLtiAAs82lBJ0e5jCpYlUQw4pQa4L9.gif");
+    --bg-img: url("https://pbs-prod.linustechtips.com/monthly_2017_09/59ceaf2627f9a_I.gifdthisafewdaysagoasarequesttoanotheruserthoughtIdshareitwithyouguys-Imgur.gif.2f15acacd394d7a17679adbb9a9644ee.gif");
+    --bg-img: url("https://www.canva.com/design/DAGEwGjL8EA/QK8SbH38YRZa7VGPONi9ew/view?utm_content=DAGEwGjL8EA&utm_campaign=designshare&utm_medium=link&utm_source=editor")
+
+    */
 
     /*TESTE FONTES*/
     --fonte1: 'Poppins', sans-serif, Verdana, Geneva, Tahoma;
@@ -44,7 +49,7 @@ html{
     background-image: var(--bg-img);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    
+    background-size: cover;
 }
 
 body{
@@ -120,26 +125,26 @@ section {
     margin: 0 auto;
     background-color: var(--bg-color);
     /*
+    background-position: center;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    clip-path: polygon(33% 0%, 70% 0%, 100% 50%, 70% 100%, 33% 100%, 0% 50%);*/
+    clip-path: polygon(33% 0%, 70% 0%, 100% 50%, 70% 100%, 33% 100%, 0% 50%);
+    */
     clip-path: polygon(25% 15%, 75% 15%, 100% 60%, 75% 100%, 25% 100%, 0% 60%);
 }
 
 .hexagon img {
     /*
     z-index: 2;
-    
     width: 90%;
     height: 90%;
     */
     object-fit: scale-down;
-    
+    background-position: center;
     align-items: center;
     position: absolute;
-    margin: 55px 30px;
-
-
-
+    width: 80%;
+    height: 80%;
+    margin: 60px 30px;
 }
 
 @keyframes floatImage {
