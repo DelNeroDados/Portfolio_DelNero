@@ -21,13 +21,7 @@
     --bg-color: #000000;
     --second-bg-color: #ff00005a;
     --bg-img: url("fundo01.gif");
-
-    /*
-    --bg-img: url("https://lh3.googleusercontent.com/d/1IQKLtiAAs82lBJ0e5jCpYlUQw4pQa4L9.gif");
-    --bg-img: url("https://pbs-prod.linustechtips.com/monthly_2017_09/59ceaf2627f9a_I.gifdthisafewdaysagoasarequesttoanotheruserthoughtIdshareitwithyouguys-Imgur.gif.2f15acacd394d7a17679adbb9a9644ee.gif");
-    --bg-img: url("https://www.canva.com/design/DAGEwGjL8EA/QK8SbH38YRZa7VGPONi9ew/view?utm_content=DAGEwGjL8EA&utm_campaign=designshare&utm_medium=link&utm_source=editor")
-
-    */
+    --logo-3: url("images/logo-3.png");
 
     /*TESTE FONTES*/
     --fonte1: 'Poppins', sans-serif, Verdana, Geneva, Tahoma;
@@ -124,27 +118,15 @@ section {
     height: 55vh;
     margin: 0 auto;
     background-color: var(--bg-color);
-    /*
-    background-position: center;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    clip-path: polygon(33% 0%, 70% 0%, 100% 50%, 70% 100%, 33% 100%, 0% 50%);
-    */
     clip-path: polygon(25% 15%, 75% 15%, 100% 60%, 75% 100%, 25% 100%, 0% 60%);
 }
 
-.hexagon img {
-    /*
-    z-index: 2;
-    width: 90%;
-    height: 90%;
-    */
-    object-fit: scale-down;
-    background-position: center;
-    align-items: center;
-    position: absolute;
+.hexagon-img {
+
+    position: fixed;
     width: 80%;
     height: 80%;
-    margin: 60px 30px;
+    margin: 20% 10%;
 }
 
 @keyframes floatImage {
@@ -645,15 +627,6 @@ feSpecularLighting {
 /*##################### FLIP 2.0 #####################*/
 
 .container{
-    /*position: relative;
-    width: 100%;
-    height: 430px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 1.5%;*/
 
     display: flex;
     justify-content: center;
@@ -690,7 +663,6 @@ feSpecularLighting {
 }
 
 .back {
-	/*background-color: #aa9e5c;*/
 	transform: rotateY(180deg);
 	border-radius: 30px;
 }
@@ -713,7 +685,6 @@ feSpecularLighting {
 .back h4 {
 	font-size: 24px;
 	color: var(--color-verde);
-    /*color: #fff;*/
 }
 
 .flip-card:hover .flip-card-inner {
@@ -729,9 +700,7 @@ feSpecularLighting {
 }
 
 .fit-img-back {
-	/*
-    background-position-y: 10px;
-    */
+
     width: 100%;
 	height: 100%;
     object-fit: cover;
@@ -742,7 +711,7 @@ feSpecularLighting {
 
 .image-text {
 	position: absolute;
-	/**/
+
     bottom: 0;
 	left: 0;
 	right: 0;
@@ -767,15 +736,11 @@ feSpecularLighting {
 	font-size: 16px;
 	display: block;
 	color: var(--color-verde);
-    /*color: #fff;
-	margin-bottom: 15px;
-    */
+
 }
 
 .back p {
-	/*
-    line-height: 1.5;
-    */
+
 	font-size: 16px;
 	color: #fff;
 }
@@ -783,7 +748,6 @@ feSpecularLighting {
 /*#################### FORMACAO BOX ####################*/
 
 .container_circle{
-    /*flex: 1 1 30rem;*/
     flex: 1;
     position:relative;
     width:100%;
@@ -861,7 +825,6 @@ feSpecularLighting {
     opacity: 0;
     transition:0.5s;
     transform: translateY(20px);
-    /*transform: translateY(20px);*/
 }
 
 .container_circle .box:hover .content h2{
@@ -962,7 +925,7 @@ feSpecularLighting {
       color: #333;
   }
   
-  header ul li:nth-child(3) a,  /*a nav que ficou em cima da barra lateral*/
+  header ul li:nth-child(3) a,
   header ul li:nth-child(4) a{
       color:#fff;
   }
@@ -984,10 +947,7 @@ feSpecularLighting {
       width: 40px;
   }
   
-  /* end header */
-  
-  /* start content */
-  .content_menu{ /*selecionei todo meio e dei space-between*/
+  .content_menu{ 
       display:flex;
       justify-content: space-between;
       align-items: center;
